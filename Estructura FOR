@@ -1,0 +1,24 @@
+
+#include <stdio.h>
+//Se desea obtener el promedio de notas, para un cursode 10 personas, de las cuales el usuario tiene acceso.
+//Las notas serán ingresadas una por una mediante el teclado
+//Imprimir el promedio de las notas por pantalla al finalizar la carga de datos
+int main() {
+	int n=10;
+	int i=0;
+	int prom=0;
+	int nota=0;
+	
+	
+	for(i=0 ; i<10 ; i++){
+		printf("Ingrese las notas:",i);
+		scanf("%d",&nota);
+		prom+= nota;
+		
+	}
+	float promedio=prom/n;
+	printf("El promedio es:\n%.2f", promedio);
+	
+	return 0;
+}
+
