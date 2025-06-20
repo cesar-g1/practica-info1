@@ -1,0 +1,21 @@
+
+#include <stdio.h>
+/*Realizar un programa que solicite al usuario ingresar un n´umero entre 0 y
+	100. Si el n´umero est´a fuera del rango, el programa debe emitir una alerta y
+	volver a pedir el n´umero hasta que est´e dentro del rango indicado*/
+int main() {
+	int num;
+	
+	printf("Ingresar un numero: ");
+	scanf("%d", &num);
+	
+	while(num<0 || num>100){
+		printf("El numero esta fuera del rango 0 y 100 \n");
+		printf("Ingrese un nuevo numero: ",num);
+		scanf("%d", &num);
+		
+		
+	}
+	printf("El numero ingresado es valido: %d",num);
+	return 0;
+}
